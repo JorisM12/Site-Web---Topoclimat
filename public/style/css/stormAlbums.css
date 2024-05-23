@@ -1,0 +1,100 @@
+@import url('style.css');
+body {
+    background-color: #262626;
+    height: 100%;
+}
+header#main-header  {
+    background-image: url('/style/images/storm/banniere.png');
+    background-size:cover;
+}
+nav#main-nav, nav#main-nav-open {
+    background-color: #262626;
+}
+main {
+    position: relative;
+    padding: 2%;
+    background-color: black;
+    height: 1500px ;
+}
+footer {
+    background-image: none;
+    background-color: black;
+}
+
+h1 {
+    display: none;
+}
+
+h2,#link-accueil {
+    color: white;
+    margin-right: 15%;
+}
+
+main a.button-type-2 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 250px;
+}
+main a.button-type-2:hover {
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    width: 250px;
+}
+#bloc-link {
+    display: flex;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 2em;
+}
+#link-accueil {
+    font-size: 1.1em;
+    margin-left: 10%;
+}
+
+#list-albums {
+    position: relative;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+section div {
+    width:  calc(100%/3);
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section div img {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+section div a{
+    color: white;
+}
+
+@media screen and (max-width: 650px) {
+    section div img {
+        height: 150px;
+        width: 150px;
+        
+    }
+}
+@media screen and (max-width: 500px) {
+    section div img {
+        height: 100px;
+        width: 100px;
+        
+    }
+}

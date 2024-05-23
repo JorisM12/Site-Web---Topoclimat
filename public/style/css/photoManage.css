@@ -1,0 +1,66 @@
+@import url('style.css');
+
+main {
+    padding: 15px;
+}
+#photo {
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#photo img:first-child {
+    height: 450px;
+    width: auto;
+    object-fit: contain;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div input.input-type-1 {
+    width: 100%;
+}
+
+
+#coords {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#photo img#loc {
+    height: 35px;
+    width: auto;
+}
+
+form textarea.input-type-1 {
+    height: 100px;
+}
+
+#check {
+    flex-direction: row;
+}
+
+form button.button-type-2 {
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map {
+    height: 500px;
+    width: 500px;
+}

@@ -1,0 +1,49 @@
+@import url('style.css');
+body {
+    background-color: #262626;
+    height: 100%;
+}
+header#main-header  {
+    background-image: url('/style/images/tmp/fdrr.jpg');
+    background-size:cover;
+}
+nav#main-nav, nav#main-nav-open {
+    background-color: #262626;
+}
+main {
+    position: relative;
+    padding: 2%;
+    background-color: black;
+    height: 2000px ;
+}
+footer {
+    background-image: none;
+    background-color: black;
+}
+h1 {
+    display: none;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 2em;
+    color: white;
+}
+#map {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+
+}
+.radius-icon {
+    border-radius: 50px;
+}
+@media screen and (max-width: 650px) {
+    h2 {
+        font-size: 1.2em;
+    }
+}

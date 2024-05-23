@@ -1,0 +1,214 @@
+@import url('style.css');
+
+article header, article header #article-time, article header #article-time div, article section figure, article section div, div.img-zoom {
+    display: flex;
+}
+article header, article section figure {
+    flex-direction: column;
+}
+article, article header #article-time, article section figure div.img-zoom img, article section figure, .new-img {
+    position: relative;
+}
+article section figure div.img-zoom, div.img-zoom, .close-elem {
+    position: absolute;
+}
+article header #article-time div, article section figure div.img-zoom, div.img-zoom, .new-img {
+    width: 100%;
+}
+article header, article header #article-time, article header #article-time div, article section figure, article section div {
+    align-items: center;
+}
+article header   #article-time .tag-article, article section figure, .close-elem {
+    cursor: pointer;
+}
+main {
+    height: 1800px;
+}
+article div img {
+    height: 100px;
+    width: 200px;
+}
+section.container-type-1 {
+    height: 1000px;
+}
+article {
+    height: 1600px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    top: 25px;
+}
+article header {
+    min-height: 350px;
+}
+article h1.title-type-1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+article header #article-time {
+    background-color:#9EA9BD;;
+    margin-top: 25px;
+    border-radius: 20px;
+    padding: 2px;
+    display: inline-flex;
+}
+article header #article-time div {
+    width: 100px;
+    display: inline-flex;
+    text-align: center;
+}
+article header #article-time div,div.img-zoom{
+    justify-content: center;
+}
+article header #article-time div:nth-child(1) {
+    width: 150px;
+}
+article header #article-time div:nth-child(2) {
+    height: 25px;
+    position: relative;
+    text-align: start;
+}
+article header a,article header  div {
+    text-decoration: none;
+    font-weight: bold;
+    color: #313131;
+}
+article header  div img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+article header   #article-time .tag-article {
+    height: 20px;
+    width: 100px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+article header   #article-time .tag-article a {
+    color: white;
+    font-size: 0.7em;
+}
+article header p {
+    width: 80%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #313131;
+}
+article section img {
+    height: 220px;
+    width: 325px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+article section figure div.img-zoom {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.447);
+    border-radius: 10px;
+    display: none;
+}
+article section figure div.img-zoom img {
+    filter: brightness(0) invert(1); 
+}
+
+article section figure div.img-zoom img {
+    height: 30px;
+    width: 30px;
+}
+article section figure {
+    height: 220px;
+    width: 325px;
+}
+figure figcaption {
+    font-size: 0.7em;
+    font-style: italic;
+    font-family: 'Roboto Light';
+}
+article section div p {
+    font-family: 'Roboto Light';
+    font-size: 0.9em;
+    padding: 0 10px 0 5px;
+}
+article section div:nth-child(2) {
+    flex-direction: row-reverse;
+}
+div.img-zoom {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    z-index: 1200;
+}
+.close-elem {
+    height: 30px;
+    width: 120px;
+    top: 10px;
+    left: 90%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.new-img {
+    top: 0;
+    object-fit: contain;
+}
+@media screen and (max-width: 1000px) { 
+    main {
+        overflow: scroll;
+    }
+    article {
+        min-height: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .new-img {
+        width: 80%;
+    }
+    .close-elem {
+        height: 40px;
+        width: 140px;
+        top: 150px;
+        left: 70%;
+    }
+    article section figure {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) { 
+    body, article {
+        height: auto;
+    }
+    body {
+        min-height: 100vh;
+    }
+    main {
+        overflow: scroll;
+    }
+    article header #article-time { 
+        font-size: 0.8em;
+    }
+    article header #article-time img { 
+        height: 18px;
+        width: auto;
+    }
+    article {
+        min-height: 100%;
+        margin-bottom: 100px;
+    }
+    article header  p{
+        font-size: 0.8em;
+    }
+    #article-time {
+        width: 100%;
+    }
+    article section div {
+        margin: 10px 0 10px 0;
+    }
+    article section div p {
+        font-size: 0.7em;
+    }
+    article section div:nth-child(2),article section div  {
+        flex-direction: column;
+    }
+}

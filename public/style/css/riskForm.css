@@ -1,0 +1,34 @@
+@import url('style.css');
+
+#bloc-form div, #bloc-btns  {
+    display: flex;
+}
+main {
+    padding: 15px;
+}
+h2.title-type-1 {
+    margin: 0;
+}
+#bloc-form {
+    height: 100%;
+    padding: 25px;
+}
+#bloc-form div {
+    flex-direction: column;
+}
+#bloc-form textarea {
+    height: 100px;
+}
+#bloc-btns {
+    width: 100%;
+    align-items: center;
+    height: 150px;
+    justify-content: space-evenly;
+}
+#bloc-btns button {
+    height: 50px;
+    width: 150px;
+}
+#bloc-btns button:first-child {
+    background-color: red;
+}

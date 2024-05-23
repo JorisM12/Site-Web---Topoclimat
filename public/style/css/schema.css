@@ -1,0 +1,200 @@
+@import url('style.css');
+body {
+    height: 1000px;
+}
+main, nav#nav-schema div h4, .list-open, .list-open li, .list-open a, section.container-type-1, section.container-type-1 div:first-child, div.img-zoom  {
+    display: flex;
+} 
+nav#nav-schema div h4, .list-open li, .list-open a, section.container-type-1, section.container-type-1 div:first-child, div#img-zoom {
+    align-items: center;
+}
+.list-open li, section.container-type-1, section.container-type-1 div:first-child, div.img-zoom, .new-img {
+    width: 100%;
+}
+nav#nav-schema div h4, .list-open, .new-img {
+    position: relative;
+}
+nav#nav-schema div h4, .list-open {
+    margin-left: auto;
+    margin-right: auto;
+}
+div#img-zoom, div.img-zoom, .close-elem {
+    position: absolute;
+}
+nav#nav-schema div h4, div#img-zoom, div.img-zoom {
+    justify-content: center;
+}
+nav#nav-schema div h4, #bloc-img, .close-elem  {
+    cursor: pointer;
+}
+.list-open, section.container-type-1, section.container-type-1 div:first-child {
+    flex-direction: column;
+}
+div#img-zoom, div.img-zoom {
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+#nav-schema h4, section.container-type-1 a, .close-elem {
+    color: white;
+}
+
+
+main {
+    height: 1400px;
+    flex-direction: row;
+}
+nav#nav-schema {
+    width: 275px;
+    height: 90%;
+    margin: 20px 25px 0 20px;
+    padding: 15px;
+}
+#nav-schema h4 {
+    height: 35px;
+    width: 225px;
+    margin-bottom: 15px;
+    background-color: #546f99;
+    border-radius: 10px;
+    font-weight: bold;
+    z-index: 10;
+}
+.list-open {
+    top:-20px;
+    width: 225px;
+    height: 125px;
+    background-color:rgb(229, 229, 229) ;
+    justify-content: flex-end;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.list-open li {
+    height: 100%;
+}
+.list-open img {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+}
+.list-open a {
+    margin-left: 15%;
+    text-decoration: none;
+    color: #546f99;
+    font-family: 'Roboto Light';
+    font-size: 0.9em;
+    text-align: start;
+}
+.list-open a.selected {
+    font-weight: bold
+}
+main img {
+    height: 150px;
+}
+section.container-type-1 {
+    height: 90%;
+    margin: 20px 20px 0 0;
+    padding: 25px;
+}
+section.container-type-1 div:first-child {
+    height: 400px;
+}
+section.container-type-1 h2{
+    margin:0;
+    margin-bottom: 20px;
+}
+section.container-type-1 img{
+    width: 430px;
+    height: 270px;
+    object-fit: cover;
+}
+section.container-type-1 a {
+    height: 30px;
+    width: 250px;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+section.container-type-1 p {
+    font-family: 'Roboto Light',Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin: 10px 15px 10px 15px;
+}
+section.container-type-1  .p-intro {
+    font-weight: bold;
+}
+section.container-type-1 h3 {
+    margin-left: 15px;
+    font-size: 1em;
+}
+#bloc-img img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+div#img-zoom {
+    display: none;
+    height: 270px;
+    width: 430px;
+    border-radius: 10px;
+}
+div#img-zoom img {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) invert(1); 
+}
+div.img-zoom {
+    height: 100%;
+    z-index: 1200;
+}
+.close-elem {
+    height: 30px;
+    width: 120px;
+    top: 10px;
+    left: 90%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.new-img {
+    top: 0;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1000px) {
+    nav#nav-schema {
+        width: 200px;
+    }
+    nav#nav-schema div h4 {
+        width: 180px;
+        font-size: 0.9em;
+    }
+    section.container-type-1 img {
+        height: 250px;
+        width: 100%;
+    }
+    .list-open {
+        width: 170px;
+    }
+    .list-open a {
+        margin-left: 5%;
+        font-size: 0.8em;
+
+    }
+}
+@media screen and (max-width: 650px) {
+    #nav-schema, a.button-type-1 {
+        display: none;
+    }
+    main {
+        padding: 15px;
+        height: 1800px;
+    }
+    section.container-type-1 {
+        margin: 0;
+        height: 100%;
+        overflow: scroll;
+    }
+    section.container-type-1 img {
+        height: 180px;
+    }
+    section.container-type-1 div:first-child {
+        height: auto;
+    }
+}

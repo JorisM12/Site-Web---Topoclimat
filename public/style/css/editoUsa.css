@@ -1,0 +1,281 @@
+@import url('style.css');
+
+#banners,  #edito, #nav-day, #edito section div:first-child, #edito .bloc-img-map {
+    display: flex;
+}
+#banners, #edito section div:first-child {
+    flex-direction: column;
+}
+#edito, #nav-day, #nav-day #bloc-rows, #bloc-rows div.rows, #bloc-rows .circle {
+    position: relative;
+}
+body {
+    background-color: #262626;
+}
+
+header#main-header  {
+    background-image: url('/style/images/storm/banniere.png');
+    background-size:cover;
+}
+
+nav#main-nav , nav#main-nav-open{
+    background-color: #262626;
+}
+main {
+    padding:0;
+    background-color: black;
+}
+footer {
+    background-image: none;
+    background-color: black;
+}
+
+* {
+    color: white;
+}
+#banners {
+    height: 125px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/style/images/storm/USA/ban.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+h2 {
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+h3 {
+    font-size: 1.5em;
+    color: white;
+}
+#edito {
+    height: 1500px;
+}
+#edito nav {
+    width: 250px;
+    height: 100%;
+}
+#edito section {
+    padding: 15px 0 15px 0;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255) rgb(6, 6, 6);
+}
+#edito section div:first-child {
+    height: 100px;
+   align-items: center;
+   justify-content: center;
+}
+#edito section div:first-child h4 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#edito section div:first-child h5 {
+    font-weight: lighter;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#edito section p {
+    text-align: center;
+    padding: 0 100px 0 100px;
+}
+#edito .bloc-img-map {
+    height: 400px;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+}
+section .bloc-img-map figure {
+    text-align: center;
+}
+section .bloc-img-map figure img{
+    height: 250px;
+    width: auto;
+}
+
+#edito section div.bloc-map {
+    height: 300px;
+    width: 400px;
+}
+#edito section .bloc-img-map div.zone-map {
+    height: 90%;
+    width: 100%;
+}
+#nav-day #bloc-rows {
+    top: 200px;
+    height: 1200px;
+    width: 50px;
+}
+#bloc-rows .rows {
+    background-color: white;
+    position: absolute;
+    width: 4px;
+}
+#bloc-rows div.rows{
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bloc-rows row-2{
+    height: 100px;
+    top: 100px;
+}
+#bloc-rows .circle{
+   height: 25px;
+   width: 25px;
+   border-radius: 50px;
+   background-color: white;
+   left: 12px;
+}
+.selected {
+    text-shadow: 0px 0px 6px #ffffff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#bloc-txt{
+    position: absolute;
+    width: 150px;
+    height: 1200px;
+    top: 201px;
+    left: 64px;
+}
+#bloc-txt a {
+    position: absolute;
+}
+
+#bloc-txt a{
+    text-decoration: none;
+    text-align: center;
+}
+#bloc-txt .txt-1{
+    top: 0px;
+}
+#bloc-txt .txt-2{
+    top: 120px;
+}
+#bloc-txt .txt-3{
+    top: 240px;
+}
+#nav-day-bottom, #nav-mobile {
+    display: none;
+}
+.leaflet-control-zoom span{
+    color: black;
+}
+@media screen and (max-width: 1200px) {
+    #edito .bloc-img-map {
+        height: 300px;
+    }
+    section .bloc-img-map figure img {
+        height: 150px;
+    }
+
+    #edito section div.bloc-map {
+        height: 200px;
+        width: 300px;
+    }
+
+    #bloc-txt {
+        width: 125px;
+    }
+    #bloc-txt a {
+        font-size: 0.9em
+    }
+}
+@media screen and (max-width: 1000px) {
+    main {
+        height: 2000px;
+    }
+    #nav-day {
+        display: none;
+    }
+    section .bloc-img-map figure img {
+        height: 150px;
+    }
+
+    #edito section div.bloc-map {
+        display: none;
+    }
+    #edito .bloc-img-map {
+        justify-content: center;
+    }
+
+    #nav-mobile {
+        position: absolute;
+        top:165px;
+        height: 50px;
+        padding: 0 25px 0 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-mobile img {
+        height: 50px;
+        width: auto;
+    }
+    #nav-mobile  a {
+        cursor: pointer;
+        height: 50px;
+        width: auto;
+        z-index: 100;
+
+    }
+    #nav-mobile a:first-child {
+        transform: rotateY(180deg);
+    }
+
+    #nav-day-bottom {
+        position: absolute;
+        bottom: 150px;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #nav-day-bottom p {
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    #nav-day-bottom ul {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-day-bottom ul li {
+        height: 50px;
+        display: inline-flex;
+        align-items: center;
+    }
+    #nav-day-bottom ul li a {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 650px) {
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    #edito section div:first-child h4 {
+        font-size: 1.3em;
+    }
+    #edito section div:first-child h5 {
+        font-size: 1.1em;
+    }
+    #nav-day {
+        display: none;
+    }
+}

@@ -1,0 +1,52 @@
+@import url('article.css');
+
+article section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article figure {
+    margin-bottom: 50px;
+}
+
+article figure div:first-child {
+    position: relative;
+    height: 400px;
+    width: 600px;
+}
+article section img {
+    height: 100%;
+    width: 100%;
+}
+
+article section figure  div.img-zoom {
+    background-color: rgba(0, 0, 0, 0.347);
+    height: 100%;
+    width: 100%;
+}
+#txt-article {
+    top: 200px;
+    position: relative;
+    font-family: 'Roboto Light',Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1000px) {
+    article {
+        height: 1500px;
+    }
+    article figure {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    article section img {
+        height: 300px;
+        width: 100%;
+    }
+    #txt-article {
+        top: 100px;
+        position: relative;
+        font-family: 'Roboto Light',Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+    }
+}

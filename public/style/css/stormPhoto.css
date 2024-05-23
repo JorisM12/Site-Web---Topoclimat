@@ -1,0 +1,155 @@
+@import url('style.css');
+
+div.img-zoom, .close-elem, #bloc-nav-photo {
+    position: absolute;
+}
+body {
+    background-color: #262626;
+    height: 100%;
+}
+header#main-header  {
+    background-image: url('/style/images/storm/banniere.png');
+    background-size:cover;
+}
+nav#main-nav, nav#main-nav-open {
+    background-color: #262626;
+}
+
+main {
+    position: relative;
+    padding: 2%;
+    background-color: black;
+    height: 2000px ;
+}
+footer {
+    background-image: none;
+    background-color: black;
+}
+h1 {
+    display: none;
+}
+h2 {
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 2em;
+    color: white;
+}
+#bloc-links  {
+    margin-left: 10%;
+    margin-bottom: 50px;
+    width: 300px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#bloc-links a , #bloc-links li{
+    color: white;
+}
+#photo {
+    height: 800px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#photo p {
+    margin-top: 20px;
+    text-align: start;
+}
+#photo img {
+    height: 90%;
+    width: auto;
+    cursor: pointer;
+}
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: white;
+}
+aside {
+    margin-top: 125px;
+    text-align: center;
+}
+#map {
+    height: 400px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rebeccapurple;
+}
+.radius-icon {
+    border-radius: 50px;
+}
+div.img-zoom {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.543);
+    display: flex;
+    justify-content: center;
+    z-index: 1200;
+}
+.close-elem {
+    height: 30px;
+    width: 120px;
+    top: 10px;
+    left: 90%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.new-img {
+    position: relative;
+    top: 0;
+    width: 100%;
+    object-fit: contain;
+}
+#bloc-nav-photo {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#btn-prev {
+    transform: rotateY(180deg);
+}
+#btn-prev, #btn-next {
+    margin: 0 25px 0 25px;
+    filter: brightness(0) invert(1); 
+}
+#photo-elem {
+    z-index: 50;
+}
+@media screen and (max-width: 1000px) {
+    #photo {
+        height:650px;
+    }
+    #photo img {
+        height: 70%;
+    }
+    .new-img {
+        width: 80%;
+    }
+    .close-elem {
+        height: 40px;
+        width: 140px;
+        top: 150px;
+        left: 70%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #photo {
+        height:550px;
+    }
+    #photo img {
+        height: 50%;
+    }
+    #map {
+        width: 70%;
+    }
+}

@@ -1,0 +1,216 @@
+@import url('schemaInter.css');
+
+main {
+    z-index: 100;
+}
+
+button#start,button#next,button#reset , .txt, img.back, #city, .txt-inter {
+    position: absolute;
+}
+.txt, img.back {
+    opacity: 0; 
+}
+
+.txt-inter {
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+}
+
+#txt-vent-froid {
+    display: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2em;
+    left: 80%;
+    bottom: 200px;
+}
+
+
+
+section.container-type-1 {
+    height: 900px;
+    width: 1400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#background {
+    position: relative;
+    height: 800px;
+    width: 1400px;
+    z-index: 2;
+}
+
+button#start,button#next,button#reset {
+    z-index: 75;
+    height: 40px;
+    width: 120px;
+    color: white;
+}
+button#start,button#next {
+    margin-left: auto;
+    margin-right: auto;
+}
+button#next {
+    display: none;
+    bottom: 450px;
+    left: 70%;
+}
+
+button#reset {
+    display: none;
+    bottom: 380px;
+    left: 70%;
+}
+.txt {
+    top: 250px;
+    color: white;
+    z-index: 75;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 3px #000;
+    z-index: 1500;
+}
+
+img.back {
+    height: 100%;
+    width: 100%;
+}
+img.back  {
+    opacity: 0;
+}
+
+#cloud {
+    display: none;
+    opacity: 1;
+    z-index: 200;
+    position: relative; 
+    background-image: url('/style/images/schemas/snow/interactif/Schéma_Neige_océan_nuage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    animation: anim-cloud 5s linear ;
+}
+
+.precip {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+#pluie1 , #pluie2 {
+    display: none;
+}
+
+#pluie1{
+    animation: anim-rain 0.5s linear alternate infinite;
+    z-index: 500;
+}
+
+#pluie2{
+    animation: anim-rain 0.5s linear alternate-reverse infinite;
+    z-index: 500;
+}
+
+.arrows {
+    position: absolute;
+    height: 115px;
+    width: auto;
+    z-index: 1000;
+}
+
+#arrow-pol-sol {
+    display: none;
+    top: 700px;
+    animation: anim-arrow 4s linear infinite;
+
+    transform: rotateY(180deg);
+}
+
+#arrow-oce-alti {
+    display: none;
+    top: 150px;
+    animation: anim-arrow-invert 4s linear  infinite;
+}
+
+#txt-vent-chaud {
+    display: none;
+    top: 100px;
+    left: 40%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+@keyframes anim-arrow {
+    0%{
+        left: 95%;
+    }
+    100% {
+        left: 25%;
+    }
+}
+
+@keyframes anim-arrow-invert {
+    0%{
+        left: 0%;
+    }
+    100% {
+        left: 75%;
+    }
+}
+
+@keyframes anim-rain{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+@keyframes anim-cloud {
+    0%{
+        background-position: -1800px;
+    }
+    90%{
+        background-position: 0px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity {
+    0%{opacity: 1;
+    ;}
+    100%{opacity: 0;
+    ;}
+}
+
+@keyframes opacity-invert {
+    0%{opacity: 0;
+    ;}
+    100%{opacity: 1;
+    ;}
+}
+
+@keyframes animeCloud{
+    0% {
+        background-position: 0 0; /* Position de départ de l'arrière-plan */
+    }
+    100% {
+        background-position: 100% 0; /* Position finale de l'arrière-plan */
+    }
+}
+
+.shadow {
+    filter: drop-shadow(7px 7px 7px #ffffff7b);
+    -webkit-filter: drop-shadow(7px 7px 7px #ffffff81);
+}

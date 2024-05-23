@@ -1,0 +1,64 @@
+@import url('style.css');
+
+section.container-type-1, .year-row, .year-row p.year, .year-row .categories a {
+    position: relative;
+}
+section.container-type-1, .year-row .categories, .year-row .categories a  {
+    display: flex;
+}
+main {
+    padding: 15px;
+}
+section.container-type-1 {
+    flex-direction: column;
+    height: 100%;
+}
+.year-row {
+    margin-top: 50px;
+}
+.year-row p.year {
+    left: 5%;
+    color: #495f83;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section .row {
+    width: 95%;
+    height: 2px;
+    background-color: #495f83;
+    margin-left: auto;
+    margin-right: auto;
+}
+.year-row .categories {
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.year-row .categories a {
+    justify-content: center;
+    align-items: center;
+    background-color: #8b8b8b;
+    border-radius: 10px;
+}
+.year-row .categories a > p {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    z-index: 50;
+}
+section img {
+    height: 150px;
+    width: 200px;
+    opacity: 0.4;
+}
+@media screen and (max-width: 1000px) { 
+    main {
+        height: 1000px;
+    }
+    .categories {
+        flex-wrap: wrap;
+    }
+    .year-row .categories a {
+        margin-bottom: 10px;
+    }
+}

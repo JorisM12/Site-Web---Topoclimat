@@ -1,0 +1,231 @@
+@import url('style.css');
+
+body, section:first-child div img, #list-album div img {
+    height: 100%;
+}
+section:first-child div, section:first-child div img, #last-photos #bloc-nav, #albums, #albums #list-album, #list-album div , #list-album div img {
+    width: 100%;
+}
+
+section:first-child div, blockquote, #last-photos , #last-photos #bloc-arrow, #last-photos #bloc-nav, #albums, #albums #list-album, #list-album div {
+    display: flex;
+}
+#last-photos, #albums, #list-album div {
+    flex-direction: column;
+}
+#last-photos, #last-photos #bloc-arrow, #albums, #albums #list-album, #list-album div {
+    align-items: center;
+}
+body {
+    background-color: #262626;
+}
+header#main-header  {
+    background-image: url('/style/images/storm/banniere.png');
+    background-size:cover;
+}
+nav#main-nav , nav#main-nav-open{
+    background-color: #262626;
+}
+main {
+    padding: 2%;
+    background-color: black;
+}
+
+section:first-child div {
+    overflow: hidden;
+    justify-content: center;
+}
+h1 {
+    display: none;
+}
+h2,h3, #last-photos #bloc-arrow {
+    position: absolute;
+    text-align: center;
+}
+h2 {
+    margin-top: 50px;
+    font-size: 3em;
+    background: linear-gradient(to top, #a1a1a1, #fcfcfc);
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+h3 {
+    margin-top: 150px;
+    color: #9ca0a3;
+}
+
+blockquote {
+    color: white;
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+blockquote footer {
+    background-image: none;
+    height: 12px;
+}
+
+section:first-child div img {
+    object-fit:cover;
+}
+
+section img {
+    height: 10px;
+    width: auto;
+}
+h4 {
+    color: white;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#last-photos {
+    position: relative;
+    height: 400px;
+    justify-content:center;
+}
+#last-photos div.bloc-photo  {
+    position: relative;
+    height: 400px;
+    width: 550px;
+    background-color: blue;
+    overflow: hidden;
+}
+#last-photos div.bloc-photo .main-img{
+    height: 400px;
+    width: 550px;
+    object-fit: cover;
+}
+#last-photos #bloc-arrow {
+    height: 35px;
+    width: 550px;
+    padding: 0 10px 0 10px;
+    top: 150px;
+    justify-content: space-between;
+}
+#last-photos #bloc-arrow img{
+    height: 25px;
+    width: 25px;
+    filter: brightness(0) invert(1); 
+    cursor: pointer;
+}
+#last-photos #bloc-arrow img:first-child{
+   transform: rotate(180deg);
+}
+#last-photos #bloc-nav {
+    position:absolute;
+    height: 20px;
+    padding: 0 35% 0 35%;
+    bottom: 10px;
+    justify-content: space-around;
+    z-index: 100;
+}
+#last-photos #bloc-nav div {
+    position:relative;
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.738);
+    z-index: 150;
+}
+#last-photos #bloc-nav div.selected {
+    background-color: rgb(255, 255, 255);
+}
+
+#albums {
+    position: relative;
+    height: 300px;
+    margin-top: 80px;
+}
+h5 {
+    color: white;
+    font-size: 1.4em;
+    text-decoration:underline;
+}
+
+#albums #list-album {
+    height: 250px;
+    justify-content: space-evenly;
+}
+
+#list-album div {
+    height: 150px;
+    padding: 0 75px 0 75px;
+}
+#list-album div a{
+    color: white;
+
+}
+
+#list-album div img {
+    object-fit: cover;
+}
+
+footer {
+    background-image: none;
+    background-color: black;
+}
+#albums-mobile {
+    display: none;
+}
+@media screen and (max-width: 1600px) {
+    #all-photo img {
+        height: calc(150px - (150px * 15 /100));
+        width: calc(250px - (250px * 15 /100));
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #list-album div {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 650px) {
+    main {
+        height: 900px;
+    }
+    section:first-child div {
+        height: 400px;
+    }
+    section:first-child div h2{
+       font-size: 2em;
+    }
+    section:first-child div h3{
+        font-size: 1em;
+        margin-top: 100px;
+    }
+    #last-photos {
+        display: none;
+    }
+    #albums {
+        display: none;
+
+    }
+    #albums-mobile  {
+        position: relative;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #albums-mobile a {
+        height: 50px;
+        width: 350px;
+        background-color: #9ca0a3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

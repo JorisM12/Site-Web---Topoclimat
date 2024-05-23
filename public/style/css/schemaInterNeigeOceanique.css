@@ -1,0 +1,314 @@
+@import url('schemaInter.css');
+
+main {
+    z-index: 100;
+}
+
+button#start,button#next,button#reset , .txt, img.back, #city {
+    position: absolute;
+}
+.txt, img.back {
+    opacity: 0; 
+}
+
+img#preload {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+section.container-type-1 {
+    height: 900px;
+    width: 1400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#background {
+    position: relative;
+    height: 800px;
+    width: 1400px;
+    z-index: 2;
+}
+
+button#start,button#next,button#reset {
+    z-index: 75;
+    height: 40px;
+    width: 120px;
+    color: white;
+}
+button#start,button#next {
+    margin-left: auto;
+    margin-right: auto;
+}
+button#next {
+    display: none;
+    bottom: 450px;
+    left: 70%;
+}
+
+button#reset {
+    display: none;
+    bottom: 380px;
+    left: 70%;
+}
+.txt {
+    top: 250px;
+    color: white;
+    z-index: 75;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 3px #000;
+    z-index: 1500;
+}
+
+img.back, #city  {
+    height: 100%;
+    width: 100%;
+}
+img.back  {
+    opacity: 0;
+}
+
+#city {
+    z-index: 100;
+}
+#cloud {
+    display: none;
+    opacity: 1;
+    z-index: 200;
+    position: relative; 
+    background-image: url('/style/images/schemas/snow/interactif/Schéma_Neige_océan_nuage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    animation: anim-cloud 5s linear ;
+}
+
+.precip , #snow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#snow {
+    z-index: 200;
+    height: 90%;
+    background-image:url('/style/images/schemas/snow/interactif/Schéma_Neige_océan_neige.opti.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anim-snow 15s linear infinite;
+    opacity: 0;
+}
+
+#pluie1 , #pluie2, #neige1, #neige2 {
+    display: none;
+}
+
+#pluie1, #neige1{
+    animation: anim-rain 0.5s linear alternate infinite;
+    z-index: 500;
+}
+
+#pluie2,#neige2{
+    animation: anim-rain 0.5s linear alternate-reverse infinite;
+    z-index: 500;
+}
+
+.arrows {
+    position: absolute;
+    height: 65px;
+    width: auto;
+    z-index: 1000;
+}
+
+#arrow-pol-sol,#arrow-pol-sol-temp  {
+    display: block;
+    height: 178px;
+    width: auto;
+    top: 671px;
+    left: -103px;
+    animation: anim-arrow 4s linear infinite;
+}
+#arrow-pol-sol-temp {
+    animation: anim-arrow-temp 4s linear infinite;
+}
+
+#txt-ocean {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#txt-arrow-1, #txt-arrow-2 {
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    z-index: 1000;
+}
+
+#txt-arrow-1 {
+    color: blue;
+    bottom: 25px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#txt-arrow-2 {
+    color:#8DC3DE;
+    left: 190px;
+    bottom: 25px;
+    font-size: 0.9em;
+}
+
+#txt-temp {
+    position: absolute;
+    bottom: 60px;
+    left: 465px;
+    text-align: center;
+    font-weight: bold;
+    color: #8DC3DE;
+    z-index: 1000;
+}
+
+.cold {
+    position: absolute;
+    top: 350px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: blue;
+    z-index: 1000;
+}
+
+#txt-temp-2 {
+    left:50px;
+}
+
+#txt-temp-3 {
+    left: 800px;
+}
+
+#txt-snow {
+    position: absolute;
+    left: 850px;
+    top: 400px;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+}
+#txt-snow-2 {
+    position: absolute;
+    left: 750px;
+    top: 675px;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+}
+#txt-arrow-3 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    bottom: 125px;
+    left: 25px;
+}
+.final {
+    opacity: 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+@keyframes anim-arrow {
+    0%{
+        left: -10%;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        left: 55%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-arrow-temp {
+    0%{
+        left: -10%;
+    }
+    100% {
+        left: 55%;
+    }
+}
+
+@keyframes anim-rain{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+@keyframes anim-cloud {
+    0%{
+        background-position: -1800px;
+    }
+    90%{
+        background-position: 0px;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes anim-snow {
+    0% {
+        background-position: 0px -1800px; 
+    }
+    100% {
+        background-position: 0px 0px; 
+    }
+}
+
+@keyframes opacity {
+    0%{opacity: 1;
+    ;}
+    100%{opacity: 0;
+    ;}
+}
+
+@keyframes animeCloud{
+    0% {
+        background-position: 0 0; /* Position de départ de l'arrière-plan */
+    }
+    100% {
+        background-position: 100% 0; /* Position finale de l'arrière-plan */
+    }
+}
+
+div#bloc1 {
+    height: 450px;
+    width: 70px;
+    z-index: 200;  
+}
+.shadow {
+    filter: drop-shadow(7px 7px 7px #ffffff7b);
+    -webkit-filter: drop-shadow(7px 7px 7px #ffffff81);
+}
+
+@keyframes animeCloud {
+    0% {
+      transform: translateX(-100%); /* Déplacer l'image complètement hors de la vue à gauche */
+    }
+    100% {
+      transform: translateX(0%); /* Déplacer l'image à sa position d'origine */
+    }
+}

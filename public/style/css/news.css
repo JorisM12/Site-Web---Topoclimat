@@ -1,0 +1,275 @@
+@import url('style.css');
+
+main, form, section article, section article div#time-article, section article div#time-article div:first-child, section article div#time-article div:nth-child(2), section article div.tag-article, section article #nav-news, section article #nav-news div:first-child ,section article #nav-news div:last-child , #list-article {
+    display: flex;
+}
+form, section article div#time-article, section article div#time-article div:first-child, section article div#time-article div:nth-child(2), section article div.tag-article, section article #nav-news div:first-child ,section article #nav-news div:last-child {
+    align-items: center;
+}
+section article div.tag-article, section article #nav-news div:first-child ,section article #nav-news div:last-child, #list-article {
+    justify-content: center;
+}
+select.select-type-1, section article, section article div#time-article, section article a:last-child {
+    position: relative;
+}
+section article, section article .button-type-1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section article div#time-article div:nth-child(2) a , section article div.tag-article a , section article div#time-article div:last-child a  {
+    text-decoration: none;
+}
+section article .img-news , section article #nav-news, #list-article article:first-child, #list-article article section , #list-article article .img-news {
+    width: 100%;
+}
+form button, section article .img-news, #list-article article .img-news {
+    height: 100%;
+}
+section article .img-news, section article section, section article #nav-news {
+    position: absolute;
+}
+main {
+    flex-direction: column;
+}
+form {
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 300px;
+    justify-content: space-around;
+}
+form button {
+    width: 75px;
+}
+section article {
+    background-color: antiquewhite;
+    height: 275px;
+    width: 325px;
+    border-radius: 10px;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+section article .img-news {
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 0;
+}
+section article section {
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.752);
+    width: 325px;
+    height: 40%;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+section article div#time-article {
+    height: 20px;
+    z-index: 10;
+}
+section article div#time-article div:first-child, section article div#time-article div:nth-child(2){
+    font-size: 10px;
+    font-weight: 700;
+    color: #707070;
+}
+section article div#time-article div:nth-child(2),section article div#time-article div:last-child  {
+    margin-left: 5px;
+}
+section article div#time-article div:nth-child(2) a {
+    font-size: 10px;
+    font-weight: 700;
+    color: #707070;
+    margin: 0 5px 0 5px;
+}
+section article div#time-article div:first-child img, section article div#time-article div:nth-child(2) img {
+    height: 12px;
+    width: 12px;
+}
+section article div.tag-article {
+    height: 13px;
+    width: 50px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+section article div#time-article div:last-child a, section article h1  {
+    color: black;
+}
+section article h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+section article p {
+    margin-top: 5px;
+    max-width: 80%;
+    height: 50px;
+    font-family: 'Roboto Light';
+    font-weight: 400;
+    font-size: 0.5em;
+    color: #5f5d5d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+section article a:last-child {
+    z-index: 10;
+    color: white;
+}
+section article .button-type-1 {
+    font-size: 0.7em;
+    height:25px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+section article #nav-news {
+    margin-bottom: 137.5px;
+    padding: 0 4px 0 4px;
+    z-index: 10;
+    justify-content: space-between;
+}
+section article #nav-news div:first-child ,section article #nav-news div:last-child  {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 50px;
+    cursor: pointer; 
+}
+section article #nav-news div:first-child{
+    transform: rotate(-180deg);
+}
+#list-article {
+    margin-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#list-article article {
+    margin-bottom: 10px;
+}
+#list-article article:first-child {
+    height: 425px;
+}
+#list-article article:first-child  div#time-article {
+    height: 40px;
+}
+#list-article article:first-child div#time-article div:first-child, #list-article article:first-child div#time-article div:nth-child(2), #list-article article:first-child div#time-article div:nth-child(2) a {
+    font-size: 0.9em;
+}
+#list-article article:first-child div#time-article div:first-child img, #list-article article:first-child  div#time-article div:nth-child(2) img {
+    height: 20px;
+    width: 20px;
+}
+#list-article article:first-child div#time-article div:last-child {
+    height: 20px;
+    width: 60px;
+    font-size: 0.8em;
+}
+#list-article article:first-child h1 {
+    font-size: 1.1em;
+}
+#list-article article:first-child p {
+    font-size: 0.9em;
+}
+#list-article article:first-child .btn-view-article{
+    height: 35px;
+    width: 120px;
+    font-size: 1em;
+}
+@media screen and (max-width: 1600px) { 
+    section article {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1200px) { 
+    section article {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 1000px) { 
+
+    form, form select.select-type-1, form button {
+        position: relative;
+    }
+    main {
+        height: 1100px;
+        overflow: scroll;
+    }
+    form {
+        margin-top: 2%;
+        margin-left: 10%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    form select.select-type-1 {
+        width: 250px;
+        height: 100%;
+    }
+    form select option {
+        width: 250px;
+    }
+    form button {
+        height: 100%;
+        width: 75px;
+        margin-left: 2%;
+    }
+    section article:first-child {
+        margin-right: 0;
+    }
+    section article {
+        width: 310px;
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width: 650px) { 
+    main {
+        height: 1100px;
+    }
+    #list-article {
+        justify-content: center;
+        padding: 0;
+        margin-top: 50px;
+        width: 100%;
+        overflow: scroll;
+    }
+    #list-article article:first-child  {
+        width: 80%;
+        height: 400px;
+    }
+    #list-article article:first-child  div#time-article {
+        height: 20px;
+        font-size: 10px;
+    }
+    #list-article article:first-child div#time-article div:first-child img, #list-article article:first-child  div#time-article div:nth-child(2) img{
+        height: 12px;
+    }
+    #list-article article:first-child  div#time-article {
+        height: 20px;
+    }
+    #list-article article:first-child h1  {
+        font-size: 0.85em;
+    }
+    #list-article article:first-child p, #list-article article p {
+        font-size: 0.75em;
+    }
+    section article {
+        height: 400px;
+        width: 80%;
+        margin: 0;
+    }
+    section article h1 {
+        font-size: 0.85em;
+    }
+    form {
+        position: relative;
+        margin-left:0;
+        height: 40px;
+        width: 100%;
+    }
+}

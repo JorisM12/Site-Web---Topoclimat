@@ -1,0 +1,65 @@
+@import url('style.css');
+
+main, section h1, form button {
+    position: relative;
+}
+main, section.container-type-1,form, form label {
+    display: flex;
+}
+main, section.container-type-1, form {
+    align-items: center;
+}
+body {
+    height: 100%;
+    background-image: url('/style/images/footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    
+}
+body img {
+    height: 200px;
+    width: auto;
+}
+main {
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    justify-content: center;
+}
+section.container-type-1 {
+    width: 70%;
+    height: 750px;
+    background-color: #eceff3;
+}
+section h1 {
+    top: -70px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+form, section.container-type-1 {
+    flex-direction: column;
+}
+form {
+    width: 60%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    font-size: 1em;
+}
+form label{
+    width: 80%;
+}
+form button {
+    margin-top: 20px;
+    height: 40px;
+    width: 170px;
+    color: white;
+}
+main a {
+    font-size: 0.7em;
+    color: black;
+}
+#bloc-notif {
+    top: 120px;
+}

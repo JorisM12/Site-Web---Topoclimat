@@ -1,0 +1,121 @@
+@import url('home.css');
+
+main {
+    padding: 15px;
+}
+#search-city, form div, #container-forcast {
+    position: relative;
+}
+
+form, section#container-cards,  #forcast-city #search-city {
+    display: flex;
+}
+
+form, #container-forcast {
+    height: 100%;
+}
+
+form div, #container-forcast {
+    width: 100%;
+}
+
+form {
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+}
+
+form div {
+    margin-left: 10px;
+}
+form button {
+    height: 35px;
+    width: 150px;
+}
+
+#suggestions {
+    display: none;
+    background-color:white;
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+    padding: 10px;
+    margin-left: 0;
+}
+.autocomplete-suggestion {
+    height: 25px;
+    margin-left: 0;
+    cursor: pointer;
+}
+section#container-cards {
+    min-width: 100%;
+}
+#forcast-city h3 {
+    font-size: 2em;
+    margin:15px 0 35px 0;
+}
+#error-info {
+    color: red;
+    display: none;
+}
+@media screen and (max-width: 1000px) { 
+    #forcast-city, #search-city,form {
+        width: 100%;
+    }
+    #forcast-city {
+        top: 55px;
+        left: 0;
+        margin: 0;
+    }
+    form {
+        margin: 0 15% 0 15%;
+    }
+    form input.input-type-1, form button.button-type-2  { 
+        height: 40px;
+    }
+    .autocomplete-suggestion {
+        height: 35px;
+    }
+    section#container-cards {
+        flex-wrap: wrap;
+    }
+    .weather-card {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 825px) { 
+    .weather-card {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 650px) { 
+
+    main {
+        height: 1100px;
+    }
+    #container-forcast {
+        background-color:#eceff3
+    }
+    #forcast-city #search-city {
+        display: flex;
+    }
+    form {
+        margin: 0 5% 0 5%;
+    }
+    form input.input-type-1, form button.button-type-2 { 
+        height: 45px;
+    }
+    .autocomplete-suggestion {
+        height: 40px;
+    }
+    #forcast-city h3 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 430px) { 
+    main {
+        height: 2000px;
+    }
+}

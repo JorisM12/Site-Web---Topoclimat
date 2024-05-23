@@ -1,0 +1,28 @@
+@import url('style.css');
+
+body {
+    height: 1400px;
+}
+main {
+    padding: 15px;
+    height: 1200px;
+}
+h2.title-type-1 {
+    margin-top: 0;
+}
+section.container-type-1 {
+    height: 800px;
+}
+form , form div{
+    display: flex;
+    flex-direction: column;
+}
+form button.button-type-2 {
+    position: relative;
+    height: 40px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    cursor: pointer;
+}

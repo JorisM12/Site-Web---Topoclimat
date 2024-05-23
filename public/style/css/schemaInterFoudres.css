@@ -1,0 +1,191 @@
+@import url('schemaInter.css');
+
+div.flash,  button#start,button#next,button#reset , .txt, img.back ,img#fdr1, img#fdr2, img#fdr3, img#fdr4, img#fdrT,div#blocFdr1,div#blocFdr2,div#blocFdr3,div#blocFdr4, #trc, img#preload, div#blocTrc, #txt-fdr1,#charges-fdr1, #txt-fdr2, #charges-fdr2, #txt-fdr3, #charges-fdr3, #txt-fdr4, #charges-fdr4 , #trc, #txt-trc  {
+    position: absolute;
+}
+div.flash, .txt, img.back ,img#fdr1, img#fdr2, img#fdr3, img#fdr4, img#fdrT{
+    opacity: 0; 
+}
+img#preload {
+    height: 100%;
+    width: 100%;
+}
+
+section.container-type-1 {
+    height: 900px;
+    width: 1400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.flash {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 50;
+}
+div#background {
+    position: relative;
+    height: 800px;
+    width: 1400px;
+    z-index: 2;
+}
+button#start,button#next,button#reset {
+    z-index: 75;
+    height: 40px;
+    width: 120px;
+    color: white;
+}
+button#start,button#next {
+    margin-left: auto;
+    margin-right: auto;
+}
+button#next, button#reset {
+    display: none;
+}
+button#next {
+    bottom: 450px;
+    left: 70%;
+}
+button#reset {
+    bottom: 380px;
+    left: 70%;
+}
+.txt {
+    top: 250px;
+    color: white;
+    z-index: 75;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 3px #000;
+}
+
+img.back ,img#fdr1, img#fdr2, img#fdr3, img#fdr4, img#fdrT {
+    height: 100%;
+    width: 100%;
+}
+img.back  {
+    opacity: 0;
+}
+div#blocFdr1,div#blocFdr2,div#blocFdr3,div#blocFdr4 {
+    height: 450px;
+    width: 70px;
+    z-index: 200;  
+}
+div#blocFdr1 {
+    top: 90px;
+    left: 13%;
+}
+div#blocFdr2 {
+    top: 90px;
+    left: 31%;
+    width: 200px;
+}
+div#blocFdr3 {
+    top: 20px;
+    left: 67%;
+    width: 120px;
+}
+div#blocFdr4 {
+    top: 100px;
+    left: 92%;
+    width: 100px;
+}
+div#blocTrc {
+    top: 449px;
+    left: 39%;
+    width: 100px;
+    height: 164px;
+    z-index: 200;
+}
+.shadow {
+    filter: drop-shadow(7px 7px 7px #ffffff7b);
+    -webkit-filter: drop-shadow(7px 7px 7px #ffffff81);
+}
+#txt-fdr1,#charges-fdr1, #txt-fdr2, #charges-fdr2, #txt-fdr3, #charges-fdr3, #txt-fdr4, #charges-fdr4 , #trc, #txt-trc {
+    opacity: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes anime {
+    0% {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 2%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+    25% {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 50%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+    50% {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 50%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+    75% {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 75%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+    100% {
+        -webkit-mask-image: -webkit-gradient(linear, top, bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+}
+@keyframes animeAsc {
+    0% {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgb(255, 255, 255)), to(rgb(0, 0, 0)));
+        -webkit-mask-size: 100% 2%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  bottom,  top;
+    }
+    100% {
+        -webkit-mask-image: -webkit-gradient(linear, top, bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+}
+@keyframes animeDsc {
+    0% {
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+        from(rgb(255, 255, 255)), to(rgb(0, 0, 0)));
+        -webkit-mask-size: 100% 2%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: top,  bottom;
+    }
+    100% {
+        -webkit-mask-image: -webkit-gradient(linear, top, bottom, 
+        from(rgb(255, 255, 255)), to(rgba(0,0,0,0)));
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position:  top,  bottom;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

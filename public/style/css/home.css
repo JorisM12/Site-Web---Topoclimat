@@ -1,0 +1,1057 @@
+@import url('style.css');
+
+main, #weather-app, #weather-forcast-map div, #weather-forcast-map-dep div, .weather-info, .weather-info .bloc-temperatures, #nav-forcast nav ul:first-of-type, .btn-nav-forcast, #nav-forcast nav ul:last-of-type, #nav-forcast-mobile ul, #nav-forcast nav ul:last-of-type li, #nav-forcast-mobile ul, #logo-date-nav, #logo-date-nav nav ul, #logo-date-nav nav ul li, section#alerts-and-news #vigilance,section#alerts-and-news #alerts, section #news, #art1, section article, section article div#time-article, section article div#time-article div:first-child, section article div#time-article div:nth-child(2), section article div#time-article div.tag-article, section article #nav-news, section article #nav-news div:first-child ,section article #nav-news div:last-child, #fast-link, #forcast-city, #forcast-city #search-city, #forcast-city #search-city h4, #forcast-city section, .weather-card, .weather-card .bloc-weather, .weather-card .bloc-wind, .weather-card .bloc-weet, .weather-card .bloc-rain, #resources div, #resources div a {
+    display: flex;
+}
+
+.weather-info, #nav-forcast nav ul:first-of-type, #logo-date-nav, section #news, #forcast-city {
+    flex-direction: column;
+}
+.weather-info .bloc-temperatures, .weather-card .bloc-weather, #resources div {
+    justify-content: space-evenly;
+}
+#weather-app, #weather-forcast-map, #weather-forcast-map-dep, #weather-forcast-map div, #weather-forcast-map-dep div, #logo-date-nav p, #logo-date-nav nav, #logo-date-nav img , section article, section article div#time-article, section article a:last-child, #fast-link, #resources div a {
+    position: relative;
+}
+#weather-forcast-map-dep div, .weather-info, #logo-date-nav, #return, section article section, section article #nav-news, #resources div a p {
+    position: absolute;
+}
+section#alerts-and-news, #nav-forcast nav ul:first-of-type, #nav-forcast nav ul:last-of-type,#nav-forcast-mobile ul, #nav-forcast aside, section article, section article .button-type-1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+#weather-forcast-map div, #weather-forcast-map-dep div, .weather-info , .weather-info .bloc-temperatures, #nav-forcast nav ul:first-of-type , .btn-nav-forcast,  #nav-forcast nav ul:last-of-type,#nav-forcast-mobile ul, #nav-forcast aside, #logo-date-nav , #logo-date-nav nav ul li, section#alerts-and-news #vigilance,section#alerts-and-news #alerts,  section article div#time-article, section article div#time-article div:first-child, section article div#time-article div:nth-child(2), section article div#time-article div.tag-article , section article #nav-news div:first-child ,section article #nav-news div:last-child, #forcast-city #search-city, #forcast-city #search-city h4, .weather-card, .weather-card .bloc-wind, .weather-card .bloc-weet, .weather-card .bloc-rain, #resources div a {
+    align-items: center;
+}
+.btn-nav-forcast, #nav-forcast nav ul:last-of-type,#nav-forcast-mobile ul, #nav-forcast nav ul:last-of-type li, #nav-forcast-mobile ul, #logo-date-nav nav ul li, section#alerts-and-news #vigilance,section#alerts-and-news #alerts, section article div#time-article div.tag-article, section article #nav-news div:first-child ,section article #nav-news div:last-child, #resources div a {
+    justify-content: center;
+}
+#weather-forcast-map, #weather-forcast-map-dep, #nav-forcast, #nav-forcast nav ul:last-of-type li, #nav-forcast-mobile ul, #gallery div, #gallery div a:first-child, #gallery div a img {
+    height: 100%;
+}
+#nav-forcast nav ul:last-of-type li, #nav-forcast-mobile ul, #logo-date-nav nav ul li, section#alerts-and-news #vigilance,section#alerts-and-news #alerts, section article #nav-news, .weather-card .bloc-weather, .weather-card .bloc-wind, .weather-card .bloc-weet, .weather-card .bloc-rain, #resources, #resources div, #gallery, #gallery div, #gallery div a img {
+    width: 100%;
+}
+
+#weather-forcast-map div img, #weather-forcast-map-dep div img , #fast-link a:first-child img, #fast-link a:last-child img, .weather-card .bloc-weather img, #resources h5 img, #gallery h6 img, #gallery a img {
+    width: auto;
+}
+
+.weather-info, #nav-forcast nav ul:first-of-type , #nav-forcast nav ul:last-of-type,#nav-forcast-mobile ul, #nav-forcast aside, #logo-date-nav nav ul li {
+    background-color: #eceff3;
+}
+
+section article p, #gallery div a:first-child, #gallery div a {
+    overflow: hidden;
+}
+#weather-forcast-map, #nav-forcast-mobile, #alerts-mobile, #weather-forcast-map div p:last-of-type, #weather-forcast-map div img:last-of-type, #return, #art2, #art3, .wind-img {
+    display: none;
+}
+section#alerts-and-news  a, section article div#time-article div:nth-child(2) a, section article div#time-article div:last-child a {
+    text-decoration: none;
+}
+#weather-forcast-map div, #weather-forcast-map-dep div, #nav-forcast nav ul:first-of-type li:first-of-type, .btn-nav-forcast:hover, #logo-date-nav p, #logo-date-nav nav ul li:first-of-type, section#alerts-and-news #vigilance,section#alerts-and-news #alerts, section article a:last-child,
+#resources div a p {
+    color: white;
+}
+#nav-forcast nav ul:first-of-type li:first-of-type, .btn-nav-forcast:hover {
+    background-color: #2e4266;
+}
+main {
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+main #weather-app {
+    margin:30px 0 0 10px;
+    min-width: 900px;
+    height: 550px;
+}
+section#alerts-and-news {
+    margin-top: 30px;
+    padding: 10px;
+    width: 350px;
+    height: 550px;
+}
+#weather-app {
+    background-image: url('/style/images/weather_map/carte_matin_3.png');
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-size:contain;
+    background-color:#343e54 ;
+}
+#weather-forcast-map, #weather-forcast-map-dep {
+    width: 720px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+#weather-forcast-map {
+    display: none;
+}
+
+#weather-forcast-map div, #weather-forcast-map-dep div {
+    flex-direction: row-reverse;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 20;
+}
+#weather-forcast-map div p:first-of-type {
+    display: block;
+}
+#weather-forcast-map div img, #weather-forcast-map-dep div img {
+    height: 70px;
+}
+.weather-info {
+    height: 110px;
+    width: 140px;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 0.4em;
+    visibility:hidden;
+    z-index: 100;
+}
+.weather-info img{
+    height: auto;
+    width: 35px;
+}
+.weather-info .city-name{
+    font-size: 1.8em;
+}
+.weather-info .weather-description{
+    font-size: 1.2em;
+}
+.weather-info .bloc-temperatures{
+    height: 20px;
+    width: 35%;
+    justify-content: space-evenly;
+}
+.weather-info .bloc-temperatures p:first-of-type,.weather-info .bloc-temperatures p:last-of-type {
+    font-size: 2em;
+}
+.weather-info .bloc-temperatures p:first-of-type {
+    color: blue;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1.5px solid rgb(132, 132, 132);
+}
+.weather-info .bloc-temperatures p:last-of-type , .weather-info span{
+    color: red;
+}
+.weather-info .wind, .weather-info .wind-value {
+    font-size: 1.2em;
+}
+.weather-info .city-name, .weather-info .weather-description,.weather-info .bloc-temperatures p:first-of-type,.weather-info .bloc-temperatures p:last-of-type {
+    font-weight: bold;
+}
+
+.weather-info .city-name, .weather-info .weather-description,.weather-info .wind, .weather-info .wind-value {
+    color: #2e4266;
+}
+#nav-forcast {
+    width: 180px;
+    background-color: #394151;
+    box-shadow: 0px 0px 0px 0px  #394151;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+#nav-forcast nav ul:first-of-type  {
+    height: 170px;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.btn-nav-forcast {
+    width: 125px;
+    height: 25px;
+    background-color:#cfcfcf;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+}
+.btn-nav-forcast:hover {
+    cursor: pointer;
+}
+#nav-forcast nav ul:last-of-type,#nav-forcast-mobile ul {
+    height: 45px;
+    width: 75%;
+    margin-top: 20px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+#nav-forcast nav ul:last-of-type li, #nav-forcast-mobile ul{
+    padding: 10px;
+    border: 2px solid #eceff3;
+    cursor: pointer;
+}
+#nav-forcast nav ul:last-of-type li:first-of-type, #nav-forcast-mobile ul li:first-of-type{
+    background-color:#2e4266 ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#nav-forcast nav ul:last-of-type li:last-of-type ,#nav-forcast-mobile ul:last-of-type li:last-of-type  {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#nav-forcast aside img {
+    height: 28px;
+    margin-right: 4px;
+}
+#nav-forcast aside {
+    width: 90%;
+    height: 150px;
+    padding: 2px;
+    margin-top: 25px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    color: #495f83;
+    font-weight: bold;
+}
+#logo-date-nav {
+    width: 100px;
+    height: 100px;
+    left: 400px;
+    width: 300px;
+    height: 200px;
+}
+#logo-date-nav p{ 
+    top: -60px;
+}
+#logo-date-nav nav {
+    top: -55px;
+}
+#logo-date-nav nav ul {
+    height: 30px;
+    width: 300px;
+    list-style-type: none;
+}
+#logo-date-nav nav ul li {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #495f83;
+    border: 1.5px solid #eceff3 ;
+    cursor: pointer;
+}
+
+#logo-date-nav nav ul li:first-of-type {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #495f83;
+}
+#logo-date-nav nav ul li:last-of-type {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#logo-date-nav img {
+    top: -30px;
+    width: 200px;
+    margin: 0;
+}
+#return {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 15px;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #546f99;
+}
+section#alerts-and-news #vigilance,section#alerts-and-news #alerts {
+    height: 50px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+section#alerts-and-news #vigilance {
+    color: black;
+}
+section#alerts-and-news #vigilance img,section#alerts-and-news #alerts img {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+section#alerts-and-news #alerts img {
+    filter: brightness(0) invert(1); 
+}
+
+section#alerts-and-news #vigilance {
+    background-color: orange;
+}
+section#alerts-and-news #alerts {
+    background-color:#495f83;
+    margin-top: 20px;
+}
+@keyframes grow {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+      background-color: red;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 white;
+      background-color: red;
+    }
+}
+.alert-active {
+    animation: grow 2s infinite alternate linear;
+    cursor: pointer;
+}
+section#alerts-and-news  a {
+    color: white
+}
+section #news {
+    margin-top: 85px;
+}
+section #news h3 {
+    text-align: center;
+    color: #495f83;
+    margin-bottom: 10px;
+}
+section article {
+    background-color: antiquewhite;
+    height: 275px;
+    width: 325px;
+    border-radius: 10px;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+section article .img-news {
+    position:absolute;
+    height: 275px;
+    width: 325px;
+    border-radius: 10px;
+    z-index: 0;
+}
+section article section {
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.752);
+    width: 325px;
+    height: 40%;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+section article div#time-article {
+    height: 20px;
+    z-index: 10;
+}
+section article div#time-article div:first-child, section article div#time-article div:nth-child(2){
+    font-size: 10px;
+    font-weight: 700;
+    color: #707070;
+}
+section article div#time-article div:nth-child(2),section article div#time-article div:last-child  {
+    margin-left: 5px;
+}
+section article div#time-article div:nth-child(2) a {
+    font-size: 10px;
+    font-weight: 700;
+    color: #707070;
+    margin: 0 5px 0 5px;
+}
+section article div#time-article div:first-child img, section article div#time-article div:nth-child(2) img {
+    height: 12px;
+    width: 12px;
+}
+section article div#time-article div.tag-article {
+    height: 13px;
+    width: 50px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+section article div#time-article div:last-child a {
+    color: black;
+}
+section article h1 {
+    color: red;
+    font-weight: bold;
+    color: black;
+    font-size: 0.75em;
+}
+section article p {
+    margin-top: 5px;
+    height: 30px;
+    max-width: 80%;
+    font-family: 'Roboto Light';
+    font-weight: 400;
+    font-size: 0.5em;
+    color: #5f5d5d;
+    overflow-y: hidden;
+}
+section article a:last-child {
+    z-index: 10;
+}
+section article .button-type-1 {
+    font-size: 0.7em;
+    height:25px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+section article #nav-news {
+    margin-bottom: 137.5px;
+    padding: 0 4px 0 4px;
+    z-index: 10;
+    justify-content: space-between;
+}
+section article #nav-news div:first-child ,section article #nav-news div:last-child  {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 50px;
+    cursor: pointer; 
+}
+section article #nav-news div:first-child{
+    transform: rotate(-180deg);
+}
+#fast-link {
+    width: 50%;
+    top: 0;
+}
+#fast-link a {
+    height: 60px;
+
+}
+#fast-link a:first-child {
+    min-width: 1000px;
+    margin: 25px 0 0 10px;
+}
+#fast-link a:last-child{
+    min-width: 350px;
+    margin: 25px 0 0 22px;
+}
+
+#fast-link a:first-child img, #fast-link a:last-child img {
+    height: 29px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); 
+}
+
+#forcast-city {
+    margin-top: 20px;
+}
+#forcast-city #search-city {
+    height: 100px;
+}
+#forcast-city #search-city a {
+    width: 250px;
+    height: 40px;
+    margin-left: 15px;
+}
+#forcast-city #search-city img {
+    margin-left: 10px;
+    filter: brightness(0) invert(1); 
+}
+#forcast-city #search-city h4 {
+    height: 50px;
+    margin-left: 15px;
+}
+#forcast-city section {
+    min-width: 1400px;
+    justify-content: space-around;
+}
+.weather-card .bloc-weather img {
+    height: 50px;
+}
+.weather-card {
+    width: 200px;
+    padding: 5px;
+    flex-direction: column-reverse;
+    transition: transform .5s;
+}
+.weather-card:hover, #gallery div a:hover { 
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+}
+.weather-card .bloc-weather{
+    margin-top: 10px;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 0.8em;
+}
+.weather-card .bloc-weather div:nth-child(2) {
+    width: 2px;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #546e9992;
+}
+.separator {
+    width: 2px;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #546e9992;
+}
+
+.weather-card p {
+    font-family: 'Roboto Light';
+}
+.weather-card p span {
+    font-weight: bold;
+    color: red;
+}
+.weather-card p:first-child {
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.weather-card .bloc-wind, .weather-card .bloc-weet, .weather-card .bloc-rain {
+    height: 50px;
+}
+.weather-card .bloc-wind img, .weather-card .bloc-weet img, .weather-card .bloc-rain img  {
+    height: 25px;
+    margin-right: 15px;
+    filter: drop-shadow(0px 0px 0px #546f99);
+}
+.weather-card .bloc-wind p, .weather-card .bloc-weet p, .weather-card .bloc-rain p {
+    font-size: 0.8em;
+}
+.sky-elem {
+    display: block;
+}
+#resources {
+    height: 200px;
+    margin-top: 50px;
+    
+}
+#resources h5, #gallery h6{
+    height: 50px;
+    font-size: 1.3em;
+    margin-left: 15px;
+    margin-top:0;
+    text-align: left;
+}
+#resources h5 img, #gallery h6 img {
+    height: 20px;
+}
+
+#resources div {
+    justify-content: space-evenly;
+}
+#resources div a {
+    background-color: #8b8b8b;
+    border-radius: 10px;
+}
+#resources div a p  {
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 20;
+}
+#resources img {
+    height: 175px;
+    opacity: 0.4;
+    width:320px;
+}
+#gallery a img {
+    height: 100px;
+}
+#gallery {
+    height: 400px;
+    margin-top: 50px;
+}
+#gallery div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+#gallery div a:first-child {
+    width: 250px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#gallery div a {
+    height: 90%;
+    width: 300px;
+    transition: transform .5s;
+}
+#gallery div a img {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1600px) {
+    main #weather-app {
+        min-width: 765px;
+    }
+    section#alerts-and-news, main #weather-app {
+        height: 467px;
+    }
+    #weather-forcast-map {
+        width: 612px;
+    }
+    #nav-forcast {
+        width: 153px ;
+    }
+    /*Ardennes*/
+    #weather-forcast-map div:nth-child(1) {
+        top: 45px;
+        left: 25px;
+        grid-column: 4/5 ;
+        grid-row: 3/4;
+    }
+    .btn-nav-forcast {
+        width: 80%;
+    }
+    #nav-forcast aside img {
+        height: 20px;
+        width: auto;
+    }
+    #nav-forcast aside {
+        font-size: 0.8em;
+    }
+    #logo-date-nav {
+        width: 255px;
+        left: 310px;
+    }
+    #logo-date-nav img {
+        width: 150px;
+    }
+    #logo-date-nav nav ul {
+        width: 255px;
+        font-size: 0.8em;
+    }
+    section#alerts-and-news {
+        width: 297.5px;
+    }
+    section article,section article .img-news {
+        width:276.25px;
+    }
+    section article section {
+        width: 100%;
+    }
+    section #news {
+        margin-top: 10px;
+    }
+    #fast-link {
+        width: 100%;
+    }
+    #fast-link a:first-child {
+       min-width: 765px;
+    }
+    #fast-link a:last-child {
+        position: relative;
+        min-width: 255px;
+        left: 65px;
+    }
+    #forcast-city section {
+        min-width: 1200px;
+    }
+    .weather-card {
+        width: 170px;
+    }
+    #gallery div a {
+        width: 255px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    main #weather-app {
+        width: 600px;
+    }
+    section#alerts-and-news, main #weather-app {
+        height: 397px;
+    }
+    #weather-forcast-map {
+        width: 520px;
+    }
+    #weather-forcast-map div img {
+        height: 50px;
+    }
+    .weather-info {
+        width: 119px;
+    }
+    #nav-forcast {
+        width: 126px ;
+    }
+    .btn-nav-forcast {
+        width: 80%;
+    }
+    #nav-forcast aside img {
+        height: 14px;
+        width: auto;
+    }
+    #nav-forcast nav ul {
+        font-size: 0.75em;
+    }
+    #nav-forcast aside {
+        position: relative;
+        height: 130px;
+        top: -10px;
+        font-size: 0.7em;
+    }
+    #logo-date-nav {
+        width: 216.75px;
+        top: 10px;
+        left: 285px;
+    }
+    #logo-date-nav p {
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
+    #logo-date-nav img {
+        width: 127.5px;
+    }
+    #logo-date-nav nav ul {
+        width: 216.75px;
+        font-size: 0.7em;
+    }
+    section#alerts-and-news {
+        width: 216px;
+    }
+    section#alerts-and-news #vigilance, section#alerts-and-news #alerts {
+        font-size: 0.8em;
+    }
+    section#alerts-and-news #vigilance img, section#alerts-and-news #alerts img {
+        height: 25px;
+        width: 25px;
+    }
+    section #news h3 {
+        font-size: 1em;
+    }
+    section article,section article .img-news {
+        width:200px;
+        height: 213px;
+    }
+    section article section {
+        width: 100%;
+    }
+    section #news {
+        margin-top: 10px;
+    }
+    section article h1 {
+        font-size: 0.7em;
+    }
+    section article p {
+        font-size: 0.5em;
+    }
+    section article .button-type-1 {
+        top: 5px;
+        font-size: 0.6em;
+        height: 20px;
+        width: 80px;
+    }
+    #fast-link {
+        width: 100%;
+    }
+    #fast-link a:first-child {
+       min-width: 650px;
+    }
+    #fast-link a:last-child {
+        position: relative;
+        min-width: 216px;
+        left: 65px;
+    }
+    #forcast-city section {
+        min-width: 1000px;
+    }
+    .weather-card {
+        width: 144.5px;
+    }
+    #gallery div a {
+        width: 216px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        height: 900px;
+    }
+    main #weather-app {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#alerts-and-news {
+        width: 350px;
+    }
+    section#alerts-and-news #vigilance, section#alerts-and-news #alerts {
+        font-size: 0.8em;
+    }
+    section#alerts-and-news #vigilance img, section#alerts-and-news #alerts img {
+        height: 25px;
+        width: 25px;
+    }
+    section #news h3 {
+        font-size: 1em;
+    }
+    section article,section article .img-news {
+        width:100%;
+        height: 213px;
+    }
+    section article #nav-news {
+        margin-bottom: 110px;
+
+    }
+    section article section {
+        width: 100%;
+    }
+    section #news {
+        margin-top: 10px;
+    }
+    section article h1 {
+        font-size: 0.7em;
+    }
+    section article p {
+        font-size: 0.5em;
+    }
+    section article .button-type-1 {
+        top: 5px;
+        font-size: 0.6em;
+        height: 20px;
+        width: 80px;
+    }
+    #fast-link {
+        width: 350px;
+        height: 150px;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #fast-link a:last-child, #fast-link a:first-child  {
+        min-width: 250px;
+        margin: 0;
+        left: 0;
+    }
+    #fast-link a:first-child  {
+        margin-bottom: 20px;
+    }
+    #forcast-city section {
+        min-width: 1000px;
+    }
+    .weather-card {
+        width: 144.5px;
+    }
+    #gallery div a {
+        width: 216px;
+    }
+    #forcast-city {
+        position: absolute;
+        width: 350px;
+        top: 604px;
+        left: 53%;
+    }
+    #forcast-city #search-city h4 {
+        display: none;
+    }
+    #forcast-city #search-city a {
+        min-width: 350px;
+        height: 60px;
+        margin: 0;
+        font-size: 1em;
+    }
+    #forcast-city section, #resources, #gallery {
+        display: none;
+    }
+}
+@media screen and (max-width: 710px) {
+
+    section#alerts-and-news,#fast-link a:last-child, #fast-link a:first-child  {
+        width: 300px;
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    #nav-forcast, #nav-forcast aside, #list-day, #list-period, #list-dep, .weather-info, #return, #logo-date-nav nav ul, section#alerts-and-news, #fast-link, #forcast-city #search-city {
+        display: none;
+    }
+    #list-day div, #list-period div, #list-dep div, .selected-nav-forcast-mobile, #nav-forcast-mobile ul, #nav-forcast-mobile ul li, #alerts-mobile, #alerts-mobile div {
+        display: flex;
+    }
+    #list-day div:active, #list-period div:active, #list-dep div:active, .selected-nav-forcast-mobile, #nav-forcast-mobile ul, #alerts-mobile div {
+        color: white;
+    }
+    #nav-forcast-mobile, #list-day, #list-period, #list-dep,  #list-dep {
+        position: absolute;
+    }
+    #nav-forcast-mobile, #bloc-dep .selected-nav-forcast-mobile,  #list-day, #list-period, #list-dep, #list-day div, #list-period div, #list-dep div, #nav-forcast-mobile ul li, #alerts-mobile div {
+        width: 100%;
+    }
+    #nav-forcast-mobile, #list-day, #list-period, #list-dep, #list-day div, #list-period div, #list-dep div, .selected-nav-forcast-mobile, #nav-forcast-mobile ul, #nav-forcast-mobile ul li, #alerts-mobile div {
+        align-items: center;
+    }
+    #list-day, #list-period, #list-dep, #list-day div, #list-period div, #list-dep div, .selected-nav-forcast-mobile, #nav-forcast-mobile ul, #nav-forcast-mobile ul li,  #alerts-mobile div {
+        justify-content: center;
+    }
+    main {
+        background-color: #cdd4df;
+    }
+    main #weather-app {
+        min-width: 350px;
+        width: 350px;
+        height: 234px ;
+        background-image: url('/style/images/weather_map/background_weather_map_mobile.png');
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+     main #weather-app {
+        height: 234px ;
+    }
+    #weather-forcast-map {
+        width: 350px;
+    }
+    #weather-forcast-map div img {
+        height: 35px;
+    }
+    #nav-forcast {
+        width: 126px ;
+    }
+    .btn-nav-forcast {
+        width: 80%;
+    }
+    #nav-forcast aside img {
+        height: 12px;
+        width: auto;
+    }
+    #logo-date-nav {
+        width: 100px;
+        top: 10px;
+        left:220px;
+    }
+    #logo-date-nav p {
+        margin-top: 5px;
+        font-size: 0.6em;
+    }
+    #logo-date-nav img {
+        width: 127.5px;
+    }
+    #nav-forcast-mobile {
+        background-color: #eceff3;
+        margin-top: 67%;
+        height: 150px;
+        z-index: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, 0.15);
+    }
+    #bloc-day{
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #bloc-period {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #bloc-dep{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        width: 100%;
+        padding: 0 20% 0 20%;
+    }
+    #weather-forcast-map-dep div img {
+        height: 40px;
+        width: auto;
+    }
+    #weather-forcast-map-dep div p{
+        font-size: 0.8em;
+    }
+    #list-day, #list-period, #list-dep {
+        background-color: #eceff3;
+        font-size: 0.9em;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    #list-day div, #list-period div, #list-dep div {
+        height: 30px;
+        color: black;
+        font-size: 0.8em;
+        border-radius: 10px;
+        z-index: 100;
+    }
+    #list-period {
+        width: 125px;
+    }
+    #list-dep{
+        width: 200px;
+        height: 220px;
+    }
+    #list-day div:active, #list-period div:active, #list-dep div:active   {
+        background-color:#2e4266 ;
+    }
+    .selected-nav-forcast-mobile, #nav-forcast-mobile ul  {
+        background-color: #2e4266;
+        width: 125px;
+        height: 30px;
+        font-size: 0.8em;
+        border-radius: 20px;
+        font-weight: 500;
+        border: 2px solid white;
+        box-shadow: 4px 6px 6px 0px rgba(0, 0, 0, 0.15);
+    }
+    .selected-nav-forcast-mobile img {
+        transform: rotate(90deg);
+        margin-left: 5px;
+    }
+    #nav-forcast-mobile ul,#nav-forcast-mobile ul li {
+        padding: 0;
+        margin: 0;
+    } 
+    #nav-forcast-mobile ul {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        height: 35px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    #nav-forcast-mobile ul li {
+        height: 100%;
+    }
+    #nav-forcast-mobile ul li:last-of-type {
+        background-color: #eceff3;
+        border-radius: 10px;
+    }
+    #alerts-mobile {
+        position: relative;
+        background-color:#546e99;
+        height: 70px;
+        width: 90%;
+        top: 180px;
+        margin: 0 auto 0 auto;
+        border: 2px solid white;
+        z-index: 0;
+    }
+    #alerts-mobile div {
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+    #alerts-mobile div:last-child {
+        background-color: orange;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+    #alerts-mobile div  img{
+        height: 40px;
+        width: auto;
+        filter: brightness(0) invert(1); 
+    }
+    #alerts-mobile div:last-child img {
+        filter: brightness(1) invert(0); 
+    }
+    #alerts-mobile div:last-child {
+        color: black;
+    }
+}
